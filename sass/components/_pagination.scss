@@ -1,0 +1,41 @@
+.pagination{
+    .disabled:hover{
+        background:white !important;
+        color: #474747 !important;
+    }
+    border-radius: 0 !important;
+    .active{
+        background: #206FC0 !important;
+        .page-link{
+            color: white !important;
+        }
+    }
+    .page-item{
+        margin-right: 1rem;
+        width: 4rem;
+        height: 4rem;
+        background: white;
+        position: relative;
+        border: 1px solid transparent;
+        transition: all .2s;
+        &:hover{
+            border: 1px solid #206FC0;
+        }
+        // &:hover .page-link{
+        //     color: #206FC0 !important;
+
+        // }
+        .page-link{
+            background: none !important;
+            border: none !important;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 0 !important;
+            font-size: 1.2rem;
+            font-family: "MontSemibold", Arial, sans-serif;
+            color: #474747;
+        }
+    }
+}

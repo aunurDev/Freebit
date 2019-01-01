@@ -3,6 +3,7 @@ $light-blue : #2b8ff2;
 $dark-blue  : #206fc0;
 $color-white : #fff;
 $blue-gradient: linear-gradient(to right bottom, rgba($light-blue, .8), rgba($dark-blue, .8));
+$blue-gradient-solid: linear-gradient(to right bottom, $light-blue, $dark-blue);
 
 
 

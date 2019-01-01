@@ -4,14 +4,14 @@
     &-login{
         transition: all .2s;
         letter-spacing: .5px;
-        border-radius: 5px;
+        border-radius: 2.5px;
         padding: 1rem 2rem;
         border: 1.5px solid white;
         color: white;
         margin-right: 2rem;
         &:hover{
-            background: white;
-            color: black;
+            background: rgba(white, .1);
+            color: white;
         }
     }
     &-call{
@@ -21,9 +21,9 @@
         color: white;
         background: #f79a20;
         border: 1.5px solid #f79a20;
-        border-radius: 5px;
+        border-radius: 2.5px;
         &:hover{
-            background: none;
+            background: rgba(#f79a20, .1);
             color: #f79a20;
         }
     }

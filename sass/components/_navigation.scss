@@ -42,13 +42,15 @@
         border: 1px solid transparent;
         &:hover{
             border-radius: 2.5px;
-            border: 1px solid rgba(white, .3);
+            border: 1px solid white;
+            background: rgba(#FFFFFF, .1);
         }
     }
     .nav-item{
         .active{
             border-radius: 2.5px;
             border: 1px solid white;
+            background: rgba(#FFFFFF, .1);
         }
     }
 }

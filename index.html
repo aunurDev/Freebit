@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Freebit</title>
 </head>
 <body>
@@ -48,7 +48,7 @@
                 </div>
             </nav>
     
-            <img class="header__bg-img" src="images/bg-header-blog-high.jpg" alt="">
+            <img class="header__bg-img" src="images/bg-header-blog-low.jpg" alt="">
             
             <div class="header__text-box">
                 <h1 class="header__utama">
@@ -84,13 +84,14 @@
     </header>
 
     <!-- CONTAINER -->
-    <section class="wrapper">
-        <div class="container">
+    <section class="wrapper__blog wrapper">
+        <div class="container__blog container">
             <div class="row card-row">
                 <div class="col-md-6 col-sm-12 card-col">
                     <div class="card">
                         <img class="card-img-top" src="images/blog-1.jpg" alt="Card image cap">
                         <div class="card-body">
+                            <div class="card-tag">News</div>
                             <h5 class="card-title">I have hinted that I would often jerk poor Queequeg from.</h5>
                             <h3 class="card-createon">Gary Holloway / April 5, 2019</h3>
 
@@ -105,6 +106,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/blog-2.jpg" alt="Card image cap">
                         <div class="card-body">
+                            <div class="card-tag">News</div>
                             <h5 class="card-title">I have hinted that I would often jerk poor Queequeg from.</h5>
                             <h3 class="card-createon">Gary Holloway / April 5, 2019</h3>
 
@@ -121,6 +123,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/blog-3.jpg" alt="Card image cap">
                         <div class="card-body">
+                            <div class="card-tag">News</div>
                             <h5 class="card-title">I have hinted that I would often jerk poor Queequeg from.</h5>
                             <h3 class="card-createon">Gary Holloway / April 5, 2019</h3>
 
@@ -135,6 +138,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/blog-4.jpg" alt="Card image cap">
                         <div class="card-body">
+                            <div class="card-tag">News</div>
                             <h5 class="card-title">I have hinted that I would often jerk poor Queequeg from.</h5>
                             <h3 class="card-createon">Gary Holloway / April 5, 2019</h3>
 
@@ -151,6 +155,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/blog-5.jpg" alt="Card image cap">
                         <div class="card-body">
+                            <div class="card-tag">News</div>
                             <h5 class="card-title">I have hinted that I would often jerk poor Queequeg from.</h5>
                             <h3 class="card-createon">Gary Holloway / April 5, 2019</h3>
 
@@ -165,6 +170,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/blog-6.jpg" alt="Card image cap">
                         <div class="card-body">
+                            <div class="card-tag">News</div>
                             <h5 class="card-title">I have hinted that I would often jerk poor Queequeg from.</h5>
                             <h3 class="card-createon">Gary Holloway / April 5, 2019</h3>
 
@@ -182,7 +188,7 @@
                 <nav class="container__pagination-box" aria-label="...">
                     <ul class="pagination">
                         <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1"><img src="images/rowleft.png" alt=""></a>
+                        <a class="page-link" href="#" tabindex="-1"><img style class="page-link__row" src="images/rowleft.svg" alt=""></a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item active">
@@ -192,7 +198,7 @@
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
                         <li class="page-item"><a class="page-link" href="#">5</a></li>
                         <li class="page-item">
-                        <a class="page-link" href="#"><img src="images/rowright.png" alt=""></a>
+                        <a class="page-link" href="#"><img class="page-link__row" src="images/rowright.svg" alt=""></a>
                         </li>
                     </ul>
                 </nav>
@@ -201,10 +207,86 @@
     </section>
 
     <!-- FOOTER -->
+    <footer class="footer">
+        <img class="footer__motif" src="images/Rectanglesmall.png" alt="motif2">
+        <img class="footer__motif" src="images/Rectanglebig.png" alt="motif1">
+        <div class="footer__content">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <img class="footer__logo" src="images/Logo.png" alt="">
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="footer__headlink">Company</div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="footer__headlink">Product</div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="footer__headlink">Support</div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="footer__headlink">Subscribe</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <p class="footer__place">Satrio Tower, 6th-floor unit 1
+                        Jl. Prof. Dr. Satrio Kav. C4, Kuningan
+                        South Jakarta 12950 - Indonesia
+                        email : info @freebitswifi.com
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <ul class="footer_link">
+                        <li class="footer__link--item"><a href="">About</a></li>
+                        <li class="footer__link--item"><a href="">Our Customers</a></li>
+                        <li class="footer__link--item"><a href="">Partners</a></li>
+                        <li class="footer__link--item"><a href="">Program for reseller</a></li>
+                        <li class="footer__link--item"><a href="">blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <ul class="footer_link">
+                        <li class="footer__link--item"><a href="">Product Tour</a></li>
+                        <li class="footer__link--item"><a href="">Idustries</a></li>
+                        <li class="footer__link--item"><a href="">Pricing</a></li>
+                        <li class="footer__link--item"><a href="">Case studies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <ul class="footer_link">
+                        <li class="footer__link--item"><a href="">Instalation</a></li>
+                        <li class="footer__link--item"><a href="">Support Devices</a></li>
+                        <li class="footer__link--item"><a href="">Integration</a></li>
+                        <li class="footer__link--item"><a href="">Knowledge Base</a></li>
+                        <li class="footer__link--item"><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <form action="">asdf</form>
+                    <div class="footer__headlink">Our Social Media</div>
+                    <div class="icon">
+                        <ul class="footer__social">
+                            <li class="footer__social--item"><img src="images/tweeter.svg" alt=""></li>
+                            <li class="footer__social--item"><img src="images/Facebook.svg" alt=""></li>
+                            <li class="footer__social--item"><img src="images/Linkedin.svg" alt=""></li>
+                            <li class="footer__social--item"><img src="images/youtube.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright--cp">© Freebitswifi, 2018 PT Borneo Infra Digital All rights reserved.<span class="footer__copyright--term text-right">Terms of Use | Privacy Policy</span></p>
+        </div>
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script type="javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+    <script type="javascript" src="js/prop"></script>
+    <script type="javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
 

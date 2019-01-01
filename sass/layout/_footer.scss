@@ -1,0 +1,80 @@
+.footer{
+    height: 62em;
+    background: $blue-gradient-solid;
+    position: relative;
+    overflow: hidden;
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    &__motif{
+        position: absolute;
+        left: -4rem;
+        bottom: 0;
+    }
+    &__logo{
+        width: 10.07rem;
+        margin-bottom: 4.5rem;
+    }
+    &__place{
+        width: 23.08rem;
+        font-size: 1.4rem;
+        line-height: 3.3rem;
+        letter-spacing: 0;
+        color: white;
+    }
+    &__headlink{
+        font-family: "MontSemiBold" Arial, sans-serif;
+        color: white;
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+        line-height: 3.7rem;
+    }
+    &__link{
+        &--item{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.4rem;
+                line-height: 4rem;
+                transition: all .2s;
+                &:hover{
+                    color: rgb(230, 228, 228);
+                }
+            }
+        }
+    }
+    &__social{
+        width: 14rem;
+        height: 2rem;
+
+        &--item{
+            list-style: none;
+            display: inline-block;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__copyright{
+        position: absolute;
+        bottom: 3rem;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        &--cp{
+            position: relative;
+            font-size: 1.4rem;
+            line-height: 3.3rem;
+            color: white;
+        }
+        &--term{
+            right: 0;
+            position: absolute;
+        }
+    }
+}

@@ -45,7 +45,6 @@ body {
     font-size: 6rem;
     display: block;
     letter-spacing: .5px;
-    animation-name: gerakanKeKanan;
     animation-duration: 2s;
     margin-bottom: .5em; }
   .header__utama--keterangan {
@@ -95,11 +94,13 @@ body {
   border: 1px solid transparent; }
   .header__nav-box .nav-link:hover {
     border-radius: 2.5px;
-    border: 1px solid rgba(255, 255, 255, 0.3); }
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1); }
 
 .header__nav-box .nav-item .active {
   border-radius: 2.5px;
-  border: 1px solid white; }
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1); }
 
 .btn {
   text-transform: uppercase;
@@ -107,14 +108,14 @@ body {
   .btn-login {
     transition: all .2s;
     letter-spacing: .5px;
-    border-radius: 5px;
+    border-radius: 2.5px;
     padding: 1rem 2rem;
     border: 1.5px solid white;
     color: white;
     margin-right: 2rem; }
     .btn-login:hover {
-      background: white;
-      color: black; }
+      background: rgba(255, 255, 255, 0.1);
+      color: white; }
   .btn-call {
     transition: all .2s;
     letter-spacing: .5px;
@@ -122,14 +123,15 @@ body {
     color: white;
     background: #f79a20;
     border: 1.5px solid #f79a20;
-    border-radius: 5px; }
+    border-radius: 2.5px; }
     .btn-call:hover {
-      background: none;
+      background: rgba(247, 154, 32, 0.1);
       color: #f79a20; }
 
 .card {
+  border: none !important;
   width: 50em;
-  height: 70.14em;
+  height: 67em;
   -webkit-box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
@@ -140,6 +142,15 @@ body {
   .card .card-body {
     padding: 4.5rem;
     position: relative; }
+  .card-tag {
+    text-transform: uppercase;
+    background: #2b8ff2;
+    position: absolute;
+    color: white;
+    padding: 1.25rem 2rem;
+    top: -2rem;
+    letter-spacing: 2px;
+    font-size: 1.2rem; }
   .card-title {
     width: 100%;
     font-size: 2.4rem;
@@ -174,7 +185,38 @@ body {
     .card-link:hover {
       color: #f79a20; }
     .card-link:hover ~ .card-link--line {
-      width: 5rem; }
+      width: 8rem; }
+
+.pagination {
+  border-radius: 0 !important; }
+  .pagination .disabled:hover {
+    background: white !important;
+    color: #474747 !important; }
+  .pagination .active {
+    background: #206FC0 !important; }
+    .pagination .active .page-link {
+      color: white !important; }
+  .pagination .page-item {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    position: relative;
+    border: 1px solid transparent;
+    transition: all .2s; }
+    .pagination .page-item:hover {
+      border: 1px solid #206FC0; }
+    .pagination .page-item .page-link {
+      background: none !important;
+      border: none !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 0 !important;
+      font-size: 1.2rem;
+      font-family: "MontSemibold", Arial, sans-serif;
+      color: #474747; }
 
 .header {
   position: relative;
@@ -210,18 +252,17 @@ body {
 .wrapper {
   background: #F7F9FE;
   position: relative;
-  height: 325em;
   z-index: 40; }
+  .wrapper__blog {
+    height: 222em; }
 
 .container {
-  width: 120.5em;
-  height: 240.02em;
-  top: -8em;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
   background: #F7F9FE;
-  padding: 5rem !important; }
+  padding: 5rem !important;
+  top: -8em; }
   .container__pagination {
     margin-top: 4rem;
     position: relative; }
@@ -229,32 +270,72 @@ body {
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
-  .container .pagination {
-    border-radius: 0 !important; }
-    .container .pagination .active {
-      background: #206FC0 !important; }
-      .container .pagination .active .page-link {
-        color: white !important; }
-    .container .pagination .page-item {
-      margin-right: 1rem;
-      width: 4rem;
-      height: 4rem;
-      background: white;
-      position: relative;
-      border: 1px solid transparent;
+
+.footer .container {
+  position: absolute;
+  top: 0;
+  background: blue;
+  height: 100%; }
+
+.footer {
+  height: 62em;
+  background: linear-gradient(to right bottom, #2b8ff2, #206fc0);
+  position: relative;
+  overflow: hidden; }
+  .footer__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; }
+  .footer__motif {
+    position: absolute;
+    left: -4rem;
+    bottom: 0; }
+  .footer__logo {
+    width: 10.07rem;
+    margin-bottom: 4.5rem; }
+  .footer__place {
+    width: 23.08rem;
+    font-size: 1.4rem;
+    line-height: 3.3rem;
+    letter-spacing: 0;
+    color: white; }
+  .footer__headlink {
+    font-family: "MontSemiBold" Arial, sans-serif;
+    color: white;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    line-height: 3.7rem; }
+  .footer__link--item {
+    list-style: none; }
+    .footer__link--item a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.4rem;
+      line-height: 4rem;
       transition: all .2s; }
-      .container .pagination .page-item:hover {
-        border: 1px solid #2B8FF2 !important; }
-      .container .pagination .page-item:hover .page-link {
-        color: #2B8FF2 !important; }
-      .container .pagination .page-item .page-link {
-        background: none !important;
-        border: none !important;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0 !important;
-        font-size: 1.2rem;
-        font-family: "MontSemibold", Arial, sans-serif;
-        color: #474747; }
+      .footer__link--item a:hover {
+        color: #e6e4e4; }
+  .footer__social {
+    width: 14rem;
+    height: 2rem; }
+    .footer__social--item {
+      list-style: none;
+      display: inline-block; }
+      .footer__social--item:not(:last-child) {
+        margin-right: 2rem; }
+  .footer__copyright {
+    position: absolute;
+    bottom: 3rem;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .footer__copyright--cp {
+      position: relative;
+      font-size: 1.4rem;
+      line-height: 3.3rem;
+      color: white; }
+    .footer__copyright--term {
+      right: 0;
+      position: absolute; }

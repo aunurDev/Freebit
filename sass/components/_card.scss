@@ -1,6 +1,7 @@
 .card{
+    border: none !important;
     width: 50em;
-    height: 70.14em;
+    height: 67em;
     -webkit-box-shadow: 0px 10px 40px 10px rgba(black, .10);
     -moz-box-shadow: 0px 10px 40px 10px rgba(black, .10);
     box-shadow: 0px 10px 40px 10px rgba(black, .10);
@@ -11,6 +12,16 @@
     .card-body{
         padding: 4.5rem;
         position: relative;
+    }
+    &-tag{
+        text-transform: uppercase;
+        background: $light-blue;
+        position: absolute;
+        color: white;
+        padding: 1.25rem 2rem;
+        top: -2rem;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
     }
     &-title{
         width: 100%;
@@ -52,7 +63,7 @@
             color: #f79a20;
         }
         &:hover ~ .card-link--line{
-            width: 5rem;
+            width: 8rem;
         }
     }
 }
