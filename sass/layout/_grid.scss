@@ -1,0 +1,57 @@
+.row{
+    max-width: $panjang-grid;
+    margin: 0 auto;
+    margin-bottom: $margin-vertikal;
+    @include clearfix;
+    @include responsive(phone){
+        max-width: 50rem;
+    }
+    @include responsive( tablet-potrait){
+        max-width: 55rem;
+    }
+
+    [class^="col-"]{
+        float: left;
+        &:not(:last-child){
+            margin-right: $margin-horizontal;
+        }
+        @include responsive(phone){
+            float: none;
+            width: 100% !important;
+            margin-bottom: 2rem !important;
+            margin-right: 0;
+            padding: 0 3rem;
+        }
+        @include responsive( tablet-potrait){
+            float: none ;
+            width: 100% !important;
+            margin-bottom: 2rem;
+            margin-right: 0;
+        }
+    }
+    // [class^-"namaClass"]{}  selector untuk SELURUH CLASS YANG DIAWALI KATA {namaClass}
+    // [class*-"namaClass"]{}  selector untuk SELURUH CLASS YANG MEMPUNYAI KATA {namaClass}
+
+    .col-1-of-2{
+        width: calc((100% - #{$margin-horizontal}) / 2); //pemanggilan variable pada function calc harus menggunakan #{$namaVariable}
+    }
+    .col-1-of-3{
+        width: calc((100% - 2 * #{$margin-horizontal}) / 3);
+    }
+
+    .col-1-of-4{
+        width: calc((100% - 3 * #{$margin-horizontal}) / 4);
+    }
+
+    .col-2-of-3{
+        width: calc(2 * (100% - 2 * #{$margin-horizontal}) / 3 + #{$margin-horizontal});
+    }
+
+    .col-2-of-4{
+        width: calc(2 * (100% - 3 * #{$margin-horizontal}) / 4 + #{$margin-horizontal});
+    }
+
+    .col-3-of-4{
+        width: calc(3 * (100% - 3 * #{$margin-horizontal}) / 4 + 2 * #{$margin-horizontal});
+    }
+}
