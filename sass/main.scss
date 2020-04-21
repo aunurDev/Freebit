@@ -1,6 +1,6 @@
 //abstract files
-// @import "abstract/variables";
-// @import "abstract/mixin";
+@import "abstract/variables";
+@import "abstract/mixin";
 
 // //base files
 @import "base/base";
@@ -15,8 +15,8 @@
 
 
 // //layout files
-// @import "layout/header";
-// @import "layout/grid";
+@import "layout/header";
+@import "layout/grid";
 // @import "layout/footer";
 
 // //page files

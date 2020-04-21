@@ -1,0 +1,49 @@
+@mixin clearfix{
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// media query
+/*
+phone               <= 600px
+tablet potrait      <= 900px
+tablet landscape    <= 1200px
+desktop             = 1200px - 1800px
+big desktop         >1800px
+*/
+
+@mixin responsive($perangkat){
+    // perangkat mobile
+    @if $perangkat == phone {
+        @media (max-width: 600px){
+            @content;
+        }
+    }
+    // perangkat tablet potrait
+    @if $perangkat == tablet-potrait{
+        @media (max-width: 900px){
+            @content;
+        }
+    }
+    // perangkat tablet landscape
+    @if $perangkat == tablet-landscape{
+        @media (max-width: 1200px){
+            @content;
+        }
+    }
+    // perangkat desktop
+    @if $perangkat == desktop{
+        @media (max-width:1800px){
+            @content;
+        }
+    }
+    // perangkat big desktop
+    @if $perangkat == big-desktop {
+        @media (min-width: 1800px){
+            @content;
+        }
+    }
+}
