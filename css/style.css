@@ -21,12 +21,19 @@ html {
   /* 1rem = 10px */ }
 
 body {
-  font-family: "Mont-Regular";
-  letter-spacing: .5rem; }
+  font-family: "MontRegular", Arial, sans-serif; }
 
 @font-face {
-  font-family: 'Mont-Regular';
-  src: url("font/mont-regular-webfont.woff"); }
+  font-family: 'MontRegular';
+  src: url("font/mont-regular-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'MontSemibold';
+  src: url("font/mont-semibold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("font/roboto-medium-webfont.woff") format("woff"); }
 
 .header__utama {
   color: #fff;
@@ -119,14 +126,67 @@ body {
       background: none;
       color: #f79a20; }
 
+.card {
+  width: 50em;
+  height: 70.14em;
+  -webkit-box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3em; }
+  .card .card-body {
+    padding: 4.5rem;
+    position: relative; }
+  .card-title {
+    width: 100%;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin: left;
+    font-family: "MontSemibold", Arial, sans-serif;
+    color: #1f222f; }
+  .card-createon {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+    color: #474747; }
+  .card-text {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    color: #474747; }
+  .card-link {
+    text-transform: uppercase;
+    color: #f79a20;
+    font-size: 1.4rem;
+    font-family: "RobotoMedium";
+    letter-spacing: .5px;
+    position: absolute;
+    bottom: 5rem; }
+    .card-link--line {
+      height: 2px;
+      background: #f79a20;
+      width: 0rem;
+      position: absolute;
+      bottom: 4rem;
+      transition: all .2s; }
+    .card-link:hover {
+      color: #f79a20; }
+    .card-link:hover ~ .card-link--line {
+      width: 5rem; }
+
 .header {
   position: relative;
-  height: 60.67rem;
-  background: linear-gradient(to right bottom, rgba(43, 143, 242, 0.8), rgba(32, 111, 192, 0.8)); }
-  .header__bg-fix {
+  height: 67.7rem;
+  z-index: -10; }
+  .header__transparent {
+    height: 100%;
+    background: linear-gradient(to right bottom, rgba(43, 143, 242, 0.8), rgba(32, 111, 192, 0.8)); }
+  .header__bg-img {
     top: 0;
     position: fixed;
     z-index: -20;
+    height: 67.7rem;
     background-size: cover;
     background-repeat: no-repeat; }
   .header__text-box {
@@ -147,6 +207,54 @@ body {
     -bagian resoulusi akan dikerjakan ketika coding mobile device
     -persiapkan asset dengan resoulusi yang berbeda untuk diload di mobile
 */
-#content {
-  background: #fff;
-  height: 90rem; }
+.wrapper {
+  background: #F7F9FE;
+  position: relative;
+  height: 325em;
+  z-index: 40; }
+
+.container {
+  width: 120.5em;
+  height: 240.02em;
+  top: -8em;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background: #F7F9FE;
+  padding: 5rem !important; }
+  .container__pagination {
+    margin-top: 4rem;
+    position: relative; }
+    .container__pagination-box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+  .container .pagination {
+    border-radius: 0 !important; }
+    .container .pagination .active {
+      background: #206FC0 !important; }
+      .container .pagination .active .page-link {
+        color: white !important; }
+    .container .pagination .page-item {
+      margin-right: 1rem;
+      width: 4rem;
+      height: 4rem;
+      background: white;
+      position: relative;
+      border: 1px solid transparent;
+      transition: all .2s; }
+      .container .pagination .page-item:hover {
+        border: 1px solid #2B8FF2 !important; }
+      .container .pagination .page-item:hover .page-link {
+        color: #2B8FF2 !important; }
+      .container .pagination .page-item .page-link {
+        background: none !important;
+        border: none !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0 !important;
+        font-size: 1.2rem;
+        font-family: "MontSemibold", Arial, sans-serif;
+        color: #474747; }

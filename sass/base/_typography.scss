@@ -1,7 +1,16 @@
 
+
 @font-face{ 
-	font-family: 'Mont-Regular';
-    src: url('font/mont-regular-webfont.woff');
+	font-family: 'MontRegular';
+	src: url('font/mont-regular-webfont.woff') format('woff');
+}
+@font-face{ 
+	font-family: 'MontSemibold';
+	src: url('font/mont-semibold-webfont.woff') format('woff');
+}
+@font-face{ 
+	font-family: 'RobotoMedium';
+	src: url('font/roboto-medium-webfont.woff') format('woff');
 }
 
 .header__utama{
@@ -12,7 +21,7 @@
     &--judul{
         font-size: 6rem;
         display: block;
-        // font-weight: 400;
+        // font-weight: 300;
         letter-spacing: .5px;
         animation-name: gerakanKeKanan;
         animation-duration: 2s ;
