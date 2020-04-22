@@ -1,8 +1,18 @@
 .header{
-    height: 72rem;
-    background: $blue-gradient, url("../img/hero.jpg") no-repeat top /cover;
     position: relative;
+    height: 60.67rem;
+    background: $blue-gradient;
+    &__bg-fix{
+        top: 0;
+        position: fixed;
+        z-index: -20;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+    
 
+    
     // Resolusi 
     // @media (min-resolution:192dpi) {
     //     background: linear-gradient(to right bottom,rgba($warna-orange-muda, 0.8),rgba(40, 180, 133, 0.8)),url('../img/hero.jpg');
@@ -10,7 +20,6 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // }
-}
 
 
 /* note: 

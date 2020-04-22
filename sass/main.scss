@@ -5,18 +5,18 @@
 // //base files
 @import "base/base";
 // @import "base/utilities";
-// @import "base/typography";
+@import "base/typography";
 
 // //components files
-// @import "components/navigation";
-// @import "components/button";
+@import "components/navigation";
+@import "components/button";
 // @import "components/card";
 // @import "components/form";
 
 
 // //layout files
 @import "layout/header";
-@import "layout/grid";
+@import "layout/content";
 // @import "layout/footer";
 
 // //page files

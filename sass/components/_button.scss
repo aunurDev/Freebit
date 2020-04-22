@@ -1,0 +1,30 @@
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    &-login{
+        transition: all .2s;
+        letter-spacing: .5px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        border: 1.5px solid white;
+        color: white;
+        margin-right: 2rem;
+        &:hover{
+            background: white;
+            color: black;
+        }
+    }
+    &-call{
+        transition: all .2s;
+        letter-spacing: .5px;
+        padding: 1rem 2rem;
+        color: white;
+        background: #f79a20;
+        border: 1.5px solid #f79a20;
+        border-radius: 5px;
+        &:hover{
+            background: none;
+            color: #f79a20;
+        }
+    }
+}

@@ -7,15 +7,15 @@
     box-sizing: border-box;
 } 
 
+a{
+    text-decoration: none !important;
+}
+
 html{
     font-size: 10px;  /* 1rem = 10px */
-    @include responsive( tablet-lanscape){
-        font-size: 9px;
-    }
-    @include responsive( tablet-potrait){
-        font-size: 8px;
-    }
-    @include responsive(phone){
-        font-size: 7px;
-    }
+}
+
+body{
+    font-family: "Mont-Regular";
+    letter-spacing: .5rem;
 }
