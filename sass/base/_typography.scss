@@ -3,3 +3,29 @@
 	font-family: 'Mont-Regular';
     src: url('font/mont-regular-webfont.woff');
 }
+
+.header__utama{
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+    text-align: center;
+    &--judul{
+        font-size: 6rem;
+        display: block;
+        // font-weight: 400;
+        letter-spacing: .5px;
+        animation-name: gerakanKeKanan;
+        animation-duration: 2s ;
+        margin-bottom: .5em;
+    }
+    &--keterangan{
+        position: absolute;
+        width: 45em;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        display: block;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+    }
+}
