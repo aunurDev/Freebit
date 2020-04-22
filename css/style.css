@@ -21,6 +21,7 @@ html {
   /* 1rem = 10px */ }
 
 body {
+  z-index: -100;
   font-family: "MontRegular", Arial, sans-serif; }
 
 @font-face {
@@ -177,8 +178,7 @@ body {
 
 .header {
   position: relative;
-  height: 67.7rem;
-  z-index: -10; }
+  height: 67.7rem; }
   .header__transparent {
     height: 100%;
     background: linear-gradient(to right bottom, rgba(43, 143, 242, 0.8), rgba(32, 111, 192, 0.8)); }
