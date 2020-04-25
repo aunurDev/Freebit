@@ -35,13 +35,61 @@
 
 // SEPARATE OF TEST
 .content{
-    background: white;
+    background: #F7F9FE;
     padding: 10%;
+    padding-bottom: 0;
     z-index: 50;
     &__wrapper{
         position: relative;
-        background: blue;
+        background: #F7F9FE;
         margin-top: -22rem;
+        padding: 6rem;
         z-index: 60;
+    }
+}
+
+.relatepost{
+    padding: 8rem 0;
+    background: white;
+    &__title{
+        font-size: 3.6rem;
+        line-height: 4.5rem;
+        letter-spacing: 0;
+        margin-left: 7.5%;
+        margin-bottom: 4rem;
+        font-family: "MontRegular";
+    }
+    .card-row{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+.writter{
+    width: 279px;
+    position: relative;
+    height: 7rem;
+    margin-bottom: 6rem;
+    &__img{
+        display: inline-block;
+    }
+    &__name{
+        padding-left: 2rem;
+        position: absolute;
+        top: 0;
+        left: 7rem;
+        display: block;
+        font-family: "MontRegular", Arial, sans-serif;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0;
+        color: #474747;
+    }
+    &__time{
+        display: block;
+        margin-top: 1.8rem;
+        color: rgba(#474747, .9);
+        font-size: 1.4rem;
+        letter-spacing: 0;
     }
 }
