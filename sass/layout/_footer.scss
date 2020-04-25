@@ -17,7 +17,8 @@
     }
     &__logo{
         width: 10.07rem;
-        margin-bottom: 4.5rem;
+        margin-top: -1rem;
+        margin-bottom: 5rem;
     }
     &__place{
         width: 23.08rem;
@@ -25,6 +26,7 @@
         line-height: 3.3rem;
         letter-spacing: 0;
         color: white;
+        padding-top: .5rem;
     }
     &__headlink{
         font-family: "MontSemiBold" Arial, sans-serif;
@@ -75,6 +77,14 @@
         &--term{
             right: 0;
             position: absolute;
+        }
+        &--link{
+            text-decoration: none;
+            color: white;
+            transition: all .2s;
+            &:hover{
+                color: rgb(230, 228, 228);
+            }
         }
     }
 }

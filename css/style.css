@@ -162,7 +162,7 @@ body {
     font-size: 1.2rem;
     line-height: 2.8rem;
     letter-spacing: 0;
-    color: #474747; }
+    color: rgba(71, 71, 71, 0.8); }
   .card-text {
     font-size: 1.2rem;
     line-height: 2.8rem;
@@ -221,23 +221,23 @@ body {
   .pagination .active:hover .page-link {
     color: white !important; }
 
-.formfooter {
-  margin-top: -2rem; }
-  .formfooter__group {
-    background: #F79A20;
-    border-radius: 2.5px;
-    margin-bottom: 3rem; }
-  .formfooter__input {
-    font-size: 1.2rem;
-    padding: 1.5rem 2rem;
-    font-family: "MontRegular", Arial, sans-serif !important;
-    line-height: 1.1rem;
-    letter-spacing: .43px;
-    color: rgba(62, 63, 68, 0.5);
-    width: 80%;
-    border: none;
-    border-radius: 2.5px 0 0 2.5px;
-    transition: all .3s; }
+.formfooter__group {
+  margin-top: 1rem;
+  background: #F79A20;
+  border-radius: 2.5px;
+  margin-bottom: 3rem; }
+
+.formfooter__input {
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  font-family: "MontRegular", Arial, sans-serif !important;
+  line-height: 1.1rem;
+  letter-spacing: .43px;
+  color: rgba(62, 63, 68, 0.5);
+  width: 80%;
+  border: none;
+  border-radius: 2.5px 0 0 2.5px;
+  transition: all .3s; }
 
 .header {
   position: relative;
@@ -325,13 +325,15 @@ body {
     bottom: 0; }
   .footer__logo {
     width: 10.07rem;
-    margin-bottom: 4.5rem; }
+    margin-top: -1rem;
+    margin-bottom: 5rem; }
   .footer__place {
     width: 23.08rem;
     font-size: 1.4rem;
     line-height: 3.3rem;
     letter-spacing: 0;
-    color: white; }
+    color: white;
+    padding-top: .5rem; }
   .footer__headlink {
     font-family: "MontSemiBold" Arial, sans-serif;
     color: white;
@@ -370,3 +372,9 @@ body {
     .footer__copyright--term {
       right: 0;
       position: absolute; }
+    .footer__copyright--link {
+      text-decoration: none;
+      color: white;
+      transition: all .2s; }
+      .footer__copyright--link:hover {
+        color: #e6e4e4; }
