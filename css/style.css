@@ -190,8 +190,7 @@ body {
 .pagination {
   border-radius: 0 !important; }
   .pagination .disabled:hover {
-    background: white !important;
-    color: #474747 !important; }
+    background: white !important; }
   .pagination .active {
     background: #206FC0 !important; }
     .pagination .active .page-link {
@@ -206,6 +205,8 @@ body {
     transition: all .2s; }
     .pagination .page-item:hover {
       border: 1px solid #206FC0; }
+    .pagination .page-item:hover .page-link {
+      color: #206FC0 !important; }
     .pagination .page-item .page-link {
       background: none !important;
       border: none !important;
@@ -217,6 +218,26 @@ body {
       font-size: 1.2rem;
       font-family: "MontSemibold", Arial, sans-serif;
       color: #474747; }
+  .pagination .active:hover .page-link {
+    color: white !important; }
+
+.formfooter {
+  margin-top: -2rem; }
+  .formfooter__group {
+    background: #F79A20;
+    border-radius: 2.5px;
+    margin-bottom: 3rem; }
+  .formfooter__input {
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    font-family: "MontRegular", Arial, sans-serif !important;
+    line-height: 1.1rem;
+    letter-spacing: .43px;
+    color: rgba(62, 63, 68, 0.5);
+    width: 80%;
+    border: none;
+    border-radius: 2.5px 0 0 2.5px;
+    transition: all .3s; }
 
 .header {
   position: relative;
@@ -276,6 +297,16 @@ body {
   top: 0;
   background: blue;
   height: 100%; }
+
+.content {
+  background: white;
+  padding: 10%;
+  z-index: 50; }
+  .content__wrapper {
+    position: relative;
+    background: blue;
+    margin-top: -22rem;
+    z-index: 60; }
 
 .footer {
   height: 62em;

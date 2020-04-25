@@ -1,0 +1,20 @@
+.formfooter{
+    margin-top: -2rem;
+    &__group{
+        background: $color-orange;
+        border-radius: 2.5px;
+        margin-bottom: 3rem;
+    }
+    &__input{
+        font-size: 1.2rem;
+        padding: 1.5rem 2rem;
+        font-family: "MontRegular", Arial, sans-serif !important;
+        line-height: 1.1rem;
+        letter-spacing: .43px;
+        color: $color-placeholder;
+        width: 80%;
+        border: none;
+        border-radius: 2.5px 0 0 2.5px;
+        transition: all .3s;;
+    }
+}

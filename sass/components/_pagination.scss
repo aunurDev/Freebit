@@ -1,7 +1,6 @@
 .pagination{
     .disabled:hover{
         background:white !important;
-        color: #474747 !important;
     }
     border-radius: 0 !important;
     .active{
@@ -21,10 +20,10 @@
         &:hover{
             border: 1px solid #206FC0;
         }
-        // &:hover .page-link{
-        //     color: #206FC0 !important;
+        &:hover .page-link{
+            color: #206FC0 !important;
 
-        // }
+        }
         .page-link{
             background: none !important;
             border: none !important;
@@ -36,6 +35,11 @@
             font-size: 1.2rem;
             font-family: "MontSemibold", Arial, sans-serif;
             color: #474747;
+        }
+    }
+    .active:hover{
+        .page-link{
+            color: white !important;
         }
     }
 }
