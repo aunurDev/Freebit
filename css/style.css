@@ -241,7 +241,8 @@ body {
 
 .header {
   position: relative;
-  height: 67.7rem; }
+  height: 67.7rem;
+  transition: all .2s; }
   .header__transparent {
     height: 100%;
     background: linear-gradient(to right bottom, rgba(43, 143, 242, 0.8), rgba(32, 111, 192, 0.8)); }
@@ -329,8 +330,11 @@ body {
   position: relative;
   height: 7rem;
   margin-bottom: 6rem; }
-  .writter__img {
+  .writter__img--profile {
     display: inline-block; }
+  .writter__img--blog {
+    width: 69.5rem;
+    margin-bottom: 5rem !important; }
   .writter__name {
     padding-left: 2rem;
     position: absolute;
@@ -348,17 +352,49 @@ body {
     color: rgba(71, 71, 71, 0.9);
     font-size: 1.4rem;
     letter-spacing: 0; }
+  .writter__sosmed--item {
+    list-style: none;
+    padding: 1rem; }
+  .writter__text {
+    padding-left: 2.5rem !important;
+    font-family: "MontRegular";
+    color: #3E3F44; }
+    .writter__text p {
+      font-size: 1.4rem;
+      letter-spacing: .5px;
+      line-height: 2.7rem;
+      margin-bottom: 5rem; }
+      .writter__text p br {
+        margin-bottom: 1.5rem; }
+    .writter__text--quots {
+      position: relative;
+      font-family: "MontSemibold";
+      padding-left: 4.5rem;
+      margin-bottom: 5rem;
+      font-size: 1.8rem !important;
+      letter-spacing: .64px !important;
+      line-height: 3.2rem !important;
+      padding-top: 2.5rem; }
+      .writter__text--quots .dblquots {
+        position: absolute;
+        top: -2rem;
+        left: 4.5rem;
+        height: 3.8rem;
+        width: 3.8rem; }
+  .writter__icon {
+    padding: 1rem 0 1rem 0;
+    background: blue; }
 
 .footer {
-  height: 62em;
+  height: 63.5em;
   background: linear-gradient(to right bottom, #2b8ff2, #206fc0);
   position: relative;
   overflow: hidden; }
   .footer__content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     width: 80%; }
   .footer__motif {
     position: absolute;

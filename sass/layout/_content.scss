@@ -33,7 +33,6 @@
     }
 }
 
-// SEPARATE OF TEST
 .content{
     background: #F7F9FE;
     padding: 10%;
@@ -71,7 +70,13 @@
     height: 7rem;
     margin-bottom: 6rem;
     &__img{
-        display: inline-block;
+        &--profile{
+            display: inline-block;
+        }
+        &--blog{
+            width: 69.5rem;
+            margin-bottom: 5rem !important;
+        }
     }
     &__name{
         padding-left: 2rem;
@@ -91,5 +96,49 @@
         color: rgba(#474747, .9);
         font-size: 1.4rem;
         letter-spacing: 0;
+    }
+
+    &__sosmed{
+        &--item{
+            list-style: none;
+            padding: 1rem;
+        }
+    }
+
+    &__text{
+        padding-left: 2.5rem !important;
+        font-family: "MontRegular";
+        color: #3E3F44;
+        p{
+            font-size: 1.4rem;
+            letter-spacing: .5px;
+            line-height: 2.7rem;
+            margin-bottom: 5rem;
+            br{
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &--quots{
+            position: relative;
+            font-family: "MontSemibold";
+            padding-left: 4.5rem;
+            margin-bottom: 5rem;
+            font-size: 1.8rem !important;
+            letter-spacing: .64px !important;
+            line-height: 3.2rem !important;
+            padding-top: 2.5rem;
+            .dblquots{
+                position: absolute;
+                top: -2rem;
+                left: 4.5rem;
+                height: 3.8rem;
+                width: 3.8rem;
+            }
+        }
+    }
+    &__icon{
+        padding: 1rem 0 1rem 0;
+        background: blue;
     }
 }

@@ -1,13 +1,13 @@
 .footer{
-    height: 62em;
+    height: 63.5em;
     background: $blue-gradient-solid;
     position: relative;
     overflow: hidden;
     &__content{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
         width: 80%;
     }
     &__motif{
