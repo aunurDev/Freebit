@@ -37,3 +37,35 @@
         letter-spacing: 1.5px;
     }
 }
+
+.header__kedua{
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0;
+    color: #1F222F;
+    padding: 2rem 0 1rem 0 ;
+    
+}
+
+.text{
+    font-size: 1.4rem;
+    letter-spacing: .5px;
+    line-height: 2.7rem;
+    margin-bottom: 5rem;
+    font-family: "MontRegular", Arial, sans-serif;
+    color: $color-text;
+    p, ul{
+        margin-bottom: 3rem !important;
+    }
+    ul{
+        padding-left: 1.5rem;
+    }
+    br{
+        margin-bottom: 1.5rem;
+    }
+    &__link{
+        color: $color-text-link;
+        line-height: 6rem;
+        text-transform: capitalize;
+    }
+}

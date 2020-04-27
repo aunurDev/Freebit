@@ -57,6 +57,31 @@ body {
     font-weight: 200;
     letter-spacing: 1.5px; }
 
+.header__kedua {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0;
+  color: #1F222F;
+  padding: 2rem 0 1rem 0; }
+
+.text {
+  font-size: 1.4rem;
+  letter-spacing: .5px;
+  line-height: 2.7rem;
+  margin-bottom: 5rem;
+  font-family: "MontRegular", Arial, sans-serif;
+  color: rgba(71, 71, 71, 0.9); }
+  .text p, .text ul {
+    margin-bottom: 3rem !important; }
+  .text ul {
+    padding-left: 1.5rem; }
+  .text br {
+    margin-bottom: 1.5rem; }
+  .text__link {
+    color: rgba(43, 143, 242, 0.9);
+    line-height: 6rem;
+    text-transform: capitalize; }
+
 .navbar {
   text-transform: uppercase;
   position: absolute; }
@@ -165,7 +190,7 @@ body {
 
 .card {
   border: none !important;
-  width: 50em;
+  width: 98%;
   height: 67em;
   -webkit-box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.1);
@@ -327,6 +352,8 @@ body {
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
+    .container__pagination--stories {
+      padding-bottom: 5rem !important; }
 
 .content {
   background: #F7F9FE;
@@ -340,17 +367,17 @@ body {
     padding: 6rem;
     z-index: 60; }
 
-.relatepost {
+.cardwrapper {
   padding: 8rem 0;
   background: white; }
-  .relatepost__title {
+  .cardwrapper__title {
     font-size: 3.6rem;
     line-height: 4.5rem;
     letter-spacing: 0;
     margin-left: 7.5%;
     margin-bottom: 4rem;
     font-family: "MontRegular"; }
-  .relatepost .card-row {
+  .cardwrapper .card-row {
     width: 90%;
     margin-left: 5%; }
 
@@ -367,6 +394,10 @@ body {
   .writter__img--blog {
     width: 69.5rem;
     margin-bottom: 5rem !important; }
+  .writter__img--partner {
+    display: block;
+    width: 14rem;
+    margin-bottom: 3rem; }
   .writter__name {
     padding-left: 2rem;
     position: absolute;
@@ -390,7 +421,7 @@ body {
   .writter__text {
     padding-left: 2.5rem !important;
     font-family: "MontRegular";
-    color: #3E3F44; }
+    color: rgba(71, 71, 71, 0.9); }
     .writter__text p {
       font-size: 1.4rem;
       letter-spacing: .5px;
@@ -416,6 +447,9 @@ body {
   .writter__icon {
     padding: 1rem 0 1rem 0;
     background: blue; }
+
+.detailstories__box {
+  padding-left: 3.5rem; }
 
 .footer {
   height: 63.5em;

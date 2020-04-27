@@ -21,6 +21,9 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        &--stories{
+            padding-bottom: 5rem !important;
+        }
     }
 }
 
@@ -39,7 +42,7 @@
     }
 }
 
-.relatepost{
+.cardwrapper{
     padding: 8rem 0;
     background: white;
     &__title{
@@ -55,7 +58,6 @@
         margin-left: 5%;
     }
 }
-
 .writter{
     width: 279px;
     position: relative;
@@ -72,7 +74,12 @@
             width: 69.5rem;
             margin-bottom: 5rem !important;
         }
-    }
+        &--partner{
+            display: block;
+            width: 14rem;
+            margin-bottom: 3rem;
+        }
+    } //end img
     &__name{
         padding-left: 2rem;
         position: absolute;
@@ -103,7 +110,7 @@
     &__text{
         padding-left: 2.5rem !important;
         font-family: "MontRegular";
-        color: #3E3F44;
+        color: $color-text;
         p{
             font-size: 1.4rem;
             letter-spacing: .5px;
@@ -131,9 +138,13 @@
                 width: 3.8rem;
             }
         }
-    }
+    } //end text
     &__icon{
         padding: 1rem 0 1rem 0;
         background: blue;
     }
+}
+
+.detailstories__box{
+    padding-left: 3.5rem;
 }
