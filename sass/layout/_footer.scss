@@ -50,18 +50,6 @@
             }
         }
     }
-    &__social{
-        width: 14rem;
-        height: 2rem;
-
-        &--item{
-            list-style: none;
-            display: inline-block;
-            &:not(:last-child){
-                margin-right: 2rem;
-            }
-        }
-    }
     &__copyright{
         position: absolute;
         bottom: 3rem;

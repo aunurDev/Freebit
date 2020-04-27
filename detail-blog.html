@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <title>Freebit</title>
 </head>
 <body>
@@ -71,9 +73,9 @@
             <div class="row">
                 <div class="col-md-1 writter__sosmed">
                     <ul>
-                        <li class="writter__sosmed--item writter__sosmed--like"><a href=""><img src="images/like-g.svg" alt=""></a></li>
-                        <li class="writter__sosmed--item writter__sosmed--facebook"><a href=""><img src="images/facebook-g.svg" alt=""></a></li>
-                        <li class="writter__sosmed--item writter__sosmed--tweeter"><a href=""><img src="images/tweeter-g.svg" alt=""></a></li>
+                        <li class="writter__sosmed--item"><a href="#" class="social--like"><i class="fas fa-thumbs-up fa-2x"></i></a></li>
+                        <li class="writter__sosmed--item"><a href="#" class="social--facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                        <li class="writter__sosmed--item"><a href="#" class="social--twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-11 writter__text">
@@ -107,10 +109,10 @@
                         You also want to become part of the team? Currently we offer a thesis in Computer Science - apply now!
                     </p>
 
-                    <p>
-                        <img class="writter__icon" src="images/like-g.svg" alt="">2,6k Liked 
-                        <img class="writter__icon" src="images/facebook-g.svg" alt="">1,4k Shared
-                        <img class="writter__icon" src="images/tweeter-g.svg" alt="">486k Shared
+                    <p> 
+                        <a href="" class="icon__blog icon--like"><i class="fas fa-thumbs-up"></i> <span class="text"> 2,6k Liked</span></a>
+                        <a href="" class="icon__blog icon--facebook"><i class="fab fa-facebook-f"></i><span class="text"> 1,4k Shared</span></a>
+                        <a href="" class="icon__blog icon--twitter"><i class="fab fa-twitter"></i><span class="text"> 486k Shared</span></a>
                     </p>
                 </div>
             </div>
@@ -214,16 +216,32 @@
                     <form action="" class="form formfooter">
                         <div class="formfooter__group">
                                 <input type="email" class="formfooter__input" placeholder="Type your email here …" id="email">
-                                <a href="" class="btn btn-sendmail"><img src="images/sendmail.svg" alt=""></a>
+                                <a href="" class="btn btn-sendmail"><i class="icon-sendmail far fa-paper-plane fa-2x"></i></a>
                         </div>
                     </form>
                     <div class="footer__headlink">Our Social Media</div>
                     <div class="icon">
-                        <ul class="footer__social">
-                            <li class="footer__social--item"><a href="#"><img src="images/tweeter.svg" alt=""></a></li>
-                            <li class="footer__social--item"><a href="#"><img src="images/Facebook.svg" alt=""></a></li>
-                            <li class="footer__social--item"><a href="#"><img src="images/Linkedin.svg" alt=""></a></li>
-                            <li class="footer__social--item"><a href="#"><img src="images/youtube.svg" alt=""></a></li>
+                        <ul class="icon__footer--social">
+                            <li class="icon__social--item">
+                                <a href="#" class="social--twitter">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="icon--item">
+                                <a href="#" class="social--facebook">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="icon__social--item">
+                                <a href="#" class="social--linkedin">
+                                    <i class="fab fa-linkedin-in fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="icon__social--item">
+                                <a href="#" class="social--youtube">
+                                    <i class="fab fa-youtube fa-2x"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

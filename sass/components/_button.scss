@@ -23,8 +23,60 @@
         border: 1.5px solid #f79a20;
         border-radius: 2.5px;
         &:hover{
-            background: rgba(#f79a20, .1);
-            color: #f79a20;
+            color: white;
+            border: 1.5px solid #ffaa3a;
+            background: #ffaa3a;
         }
+    }
+
+    &-sendmail{ 
+        .icon-sendmail{
+        color: white;
+        transition: all .3s;
+            &:hover{
+                color: $color-placeholder;
+            }
+        }
+    }
+}
+
+.icon{
+    &__footer{
+        &--social{
+            li{
+                list-style: none;
+                display: inline-block;
+                transition: all .4s;
+                margin-left: -1rem;
+                padding: 1.5rem;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    &__blog{
+        &:not(:first-child){
+            margin-left: 1rem;
+        }
+        color: $color-grey;
+        
+    }
+}
+.social{
+    &--twitter:hover{
+        color: $color-twitter;
+    }
+    &--facebook:hover{
+        color: $color-facebook;
+    }
+    &--linkedin:hover{
+        color: $color-linkedin;
+    }
+    &--youtube:hover{
+        color: $color-youtube;
+    }
+    &--like:hover{
+        color: $color-placeholder;
     }
 }

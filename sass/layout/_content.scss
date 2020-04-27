@@ -24,15 +24,7 @@
     }
 }
 
-.footer{
-    .container{
-        position: absolute;
-        top: 0;
-        background: blue;
-        height: 100%;
-    }
-}
-
+// BLUEPRINT CONTENT
 .content{
     background: #F7F9FE;
     padding: 10%;
@@ -71,6 +63,9 @@
     margin-bottom: 6rem;
     &__img{
         &--profile{
+            width: 7rem;
+            overflow: hidden;
+            border-radius: 100%;
             display: inline-block;
         }
         &--blog{
