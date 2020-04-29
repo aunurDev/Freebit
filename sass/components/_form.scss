@@ -18,3 +18,28 @@
         transition: all .3s;;
     }
 }
+
+.joinform{
+    padding-top: 2.5rem;
+    &__group{
+        margin-bottom: 2rem;
+        label{
+            display: block;
+            font-family: "MontSemibold", Arial, sans-serif;
+            line-height: 3.4rem;
+            color: #1F222F;
+        }
+        input{
+            border-radius: 2.5px;
+            border: 1px solid rgba(grey, .3);
+            width: 100%;
+            padding: 1rem;
+            font-family: "MontRegular", Arial, sans-serif;
+            &::placeholder{
+                font-size: 1.2rem;
+                letter-spacing: .43px;
+                color: rgba(#3E3F44, .5)
+            }
+        }
+    }
+}
