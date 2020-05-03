@@ -33,11 +33,13 @@
     padding: 10%;
     padding-bottom: 0;
     z-index: 50;
+    padding-bottom: 3rem;
     &__wrapper{
         position: relative;
         background: #F7F9FE;
         margin-top: -22rem;
         padding: 6rem;
+        padding-bottom: 0;
         z-index: 60;
     }
 }
@@ -104,6 +106,15 @@
         &--item{
             list-style: none;
             padding: 1rem;
+            a{
+                color: rgba(#3E3F44, .3);
+                &:active{
+                    color:#0f5195;
+                }
+            }
+            .active{
+                color:#0f5195;
+            }
         }
     }
 

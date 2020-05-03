@@ -345,7 +345,6 @@ body {
       border: 1px solid rgba(128, 128, 128, 0.3);
       text-transform: capitalize; }
     .joinform__group .icon {
-      color: rgba(62, 63, 68, 0.3);
       position: absolute;
       bottom: 15px;
       right: 15px; }
@@ -410,12 +409,14 @@ body {
   background: #F7F9FE;
   padding: 10%;
   padding-bottom: 0;
-  z-index: 50; }
+  z-index: 50;
+  padding-bottom: 3rem; }
   .content__wrapper {
     position: relative;
     background: #F7F9FE;
     margin-top: -22rem;
     padding: 6rem;
+    padding-bottom: 0;
     z-index: 60; }
 
 .cardwrapper {
@@ -469,6 +470,12 @@ body {
   .writter__sosmed--item {
     list-style: none;
     padding: 1rem; }
+    .writter__sosmed--item a {
+      color: rgba(62, 63, 68, 0.3); }
+      .writter__sosmed--item a:active {
+        color: #0f5195; }
+    .writter__sosmed--item .active {
+      color: #0f5195; }
   .writter__text {
     padding-left: 2.5rem !important;
     font-family: "MontRegular";
