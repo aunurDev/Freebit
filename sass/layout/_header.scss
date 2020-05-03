@@ -2,6 +2,9 @@
     position: relative;
     height: 67.7rem;
     transition: all .2s;
+    @include responsive(phone){
+        height: 42.9rem;
+    }
     &__transparent{
         height: 100%;
         background: $blue-gradient;
@@ -10,7 +13,7 @@
         top: 0;
         position: fixed;
         z-index: -20;
-        height: 67.7rem;
+        height: 42.9rem;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -21,6 +24,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include responsive(phone){
+            height: 20%;
+            top: 45%;
+        }
     }
     &__nav-box{
         position: absolute;
@@ -28,6 +35,9 @@
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
+        @include responsive(phone){
+            width: 90%;
+        }
     }
 }
     

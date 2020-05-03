@@ -1,11 +1,4 @@
-.wrapper{
-    background: #F7F9FE;
-    position: relative;
-    z-index: 40;
-    &__blog{
-        height: 222em;
-    }
-}
+
 .container{
     left: 50%;
     transform: translateX(-50%);
@@ -34,13 +27,23 @@
     padding-bottom: 0;
     z-index: 50;
     padding-bottom: 3rem;
+    @include responsive(phone){
+        padding: 0;
+        padding-right: 10%;
+        padding-bottom: 4rem;
+    }
     &__wrapper{
         position: relative;
         background: #F7F9FE;
         margin-top: -22rem;
         padding: 6rem;
-        padding-bottom: 0;
         z-index: 60;
+        @include responsive(phone){
+            margin-top: -4.5rem;
+            padding-left: 4rem;
+            padding-right: 0;
+            padding-top: 10rem;
+        }
     }
 }
 
