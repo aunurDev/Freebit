@@ -22,6 +22,7 @@
 .joinform{
     padding-top: 2.5rem;
     &__group{
+        position: relative;
         margin-bottom: 2rem;
         label{
             display: block;
@@ -40,6 +41,26 @@
                 letter-spacing: .43px;
                 color: rgba(#3E3F44, .5)
             }
+        }
+        select{
+            padding: 1rem !important;
+            height: 4.5rem;
+            border-radius: 2.5px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -ms-progress-appearance: none;
+            font-size: 1.2rem;
+            letter-spacing: 0.43px !important;
+            color: rgba(#3E3F44, .3);
+            border: 1px solid rgba(grey, .3);
+            text-transform: capitalize;
+        }
+        .icon{
+            color: rgba(#3E3F44, .3);
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
         }
     }
 }

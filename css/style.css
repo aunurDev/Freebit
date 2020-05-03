@@ -314,6 +314,7 @@ body {
 .joinform {
   padding-top: 2.5rem; }
   .joinform__group {
+    position: relative;
     margin-bottom: 2rem; }
     .joinform__group label {
       display: block;
@@ -330,6 +331,24 @@ body {
         font-size: 1.2rem;
         letter-spacing: .43px;
         color: rgba(62, 63, 68, 0.5); }
+    .joinform__group select {
+      padding: 1rem !important;
+      height: 4.5rem;
+      border-radius: 2.5px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-progress-appearance: none;
+      font-size: 1.2rem;
+      letter-spacing: 0.43px !important;
+      color: rgba(62, 63, 68, 0.3);
+      border: 1px solid rgba(128, 128, 128, 0.3);
+      text-transform: capitalize; }
+    .joinform__group .icon {
+      color: rgba(62, 63, 68, 0.3);
+      position: absolute;
+      bottom: 15px;
+      right: 15px; }
 
 .header {
   position: relative;
