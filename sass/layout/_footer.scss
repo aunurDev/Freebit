@@ -3,9 +3,18 @@
     background: $blue-gradient-solid;
     position: relative;
     overflow: hidden;
+    @include responsive(phone){
+        height: 145rem;
+        text-align: center;
+    }
+    .box-item{
+        &:not(:last-child){
+            margin-bottom: 3.5rem;
+        }
+    }
     &__content{
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -40%);
         width: 80%;
@@ -15,10 +24,26 @@
         left: -4rem;
         bottom: 0;
     }
+    .motif1{
+        @include responsive(phone){
+            height: 15rem;
+            margin-left: -30rem;
+        }
+    }
+    .motif2{
+        @include responsive(phone){
+            height: 50rem;
+            margin-left: -40rem;
+        }
+    }
     &__logo{
         width: 10.07rem;
         margin-top: -1rem;
         margin-bottom: 5rem;
+        @include responsive(phone){
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
     }
     &__place{
         width: 23.08rem;
@@ -27,13 +52,20 @@
         letter-spacing: 0;
         color: white;
         padding-top: .5rem;
+        @include responsive(phone){
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &__headlink{
         font-family: "MontSemiBold" Arial, sans-serif;
         color: white;
         font-size: 2.1rem;
-        margin-bottom: 1rem;
         line-height: 3.7rem;
+        &--mb4{
+            margin-bottom: 4rem;
+
+        }
     }
     &__link{
         &--item{
@@ -44,6 +76,9 @@
                 font-size: 1.4rem;
                 line-height: 4rem;
                 transition: all .2s;
+                @include responsive(phone){
+                    line-height: 3rem;
+                }
                 &:hover{
                     color: rgb(230, 228, 228);
                 }
@@ -70,6 +105,7 @@
             text-decoration: none;
             color: white;
             transition: all .2s;
+            margin-bottom: 5rem !important;
             &:hover{
                 color: rgb(230, 228, 228);
             }

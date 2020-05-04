@@ -13,9 +13,12 @@
         top: 0;
         position: fixed;
         z-index: -20;
-        height: 42.9rem;
+        height: 67.7rem;
         background-size: cover;
         background-repeat: no-repeat;
+        @include responsive(phone){
+            height: 42.9rem;
+        }
     }
     &__text-box{
         height: 40%;
