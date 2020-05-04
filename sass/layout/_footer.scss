@@ -87,19 +87,38 @@
     }
     &__copyright{
         position: absolute;
-        bottom: 3rem;
+        bottom: 5rem;
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
+        font-size: 1.4rem;
+        line-height: 3.3rem;
+        color: white;
+        @include responsive(phone){
+            height: 12rem;
+        }
         &--cp{
-            position: relative;
-            font-size: 1.4rem;
-            line-height: 3.3rem;
-            color: white;
+            position: absolute;
+            left: 0;
+            @include responsive(phone){
+                display: block;
+                font-size: 1.3rem !important;
+                letter-spacing: 1.5px;
+                bottom: 0;
+            }
         }
         &--term{
             right: 0;
             position: absolute;
+            display: block;
+            text-align: right;
+            @include responsive(phone){
+                width: 100%;
+                top: 0;
+                text-align: center !important;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         &--link{
             text-decoration: none;
