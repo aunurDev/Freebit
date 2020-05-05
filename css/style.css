@@ -225,6 +225,9 @@ body {
     background: #f79a20 !important;
     padding: 1.5rem 2rem !important;
     color: white !important; }
+    @media (max-width: 600px) {
+      .btn-orange {
+        margin-top: 3rem !important; } }
 
 .icon__footer--social li {
   list-style: none;
@@ -414,6 +417,9 @@ body {
       position: absolute;
       bottom: 15px;
       right: 15px; }
+  .joinform .box-check {
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -445,8 +451,8 @@ body {
   position: relative; }
   .promoted-checkbox label:after {
     content: "";
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 2rem;
+    width: 2rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
     float: left;
@@ -456,16 +462,16 @@ body {
   .promoted-checkbox label .text-label {
     position: absolute;
     font-size: 1.1rem;
-    top: -.5rem; }
+    top: -.4rem; }
 
 .promoted-checkbox svg {
   stroke: #206fc0;
-  stroke-width: 3px;
+  stroke-width: 5px;
   height: 0;
   width: 1rem;
   position: absolute;
-  left: 4px;
-  top: -3px;
+  left: 5px;
+  top: -2px;
   stroke-dasharray: 33; }
 
 @keyframes draw-checkbox {

@@ -49,6 +49,9 @@
         background: #f79a20 !important;
         padding: 1.5rem 2rem !important;
         color: white !important;
+        @include responsive(phone){
+            margin-top: 3rem !important;
+        }
     }
 }
 
