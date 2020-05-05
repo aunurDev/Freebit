@@ -6,6 +6,9 @@
     background: #F7F9FE;
     padding: 5rem !important;
     top: -8em;
+    @include responsive(phone){
+        font-size: 1rem;
+    }
     &__pagination{
         margin-top: 4rem;
         position: relative;
@@ -38,6 +41,7 @@
         margin-top: -22rem;
         padding: 6rem;
         z-index: 60;
+        padding-bottom: 0;
         @include responsive(phone){
             margin-top: -4.5rem;
             padding-left: 4rem;
@@ -180,4 +184,15 @@
 
 .detailstories__box{
     padding-left: 3.5rem;
+    @include responsive(phone){
+        padding: 0;
+    }
+
+    ul{
+        li{
+            @include responsive(phone){
+                margin-bottom: .6rem;
+            }
+        }
+    }
 }

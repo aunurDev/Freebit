@@ -20,23 +20,23 @@ html {
   font-size: 10px;
   /* 1rem = 10px */ }
   html .mb-half-1 {
-    margin-bottom: .5rem; }
-  html .mb1 {
-    margin-bottom: 1rem; }
+    margin-bottom: .5rem !important; }
+  html .mb-1 {
+    margin-bottom: 1rem !important; }
   html .mb-2 {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem !important; }
   html .mb-3 {
-    margin-bottom: 3rem; }
-  html .mb4 {
-    margin-bottom: 4rem; }
+    margin-bottom: 3rem !important; }
+  html .mb-4 {
+    margin-bottom: 4rem !important; }
     @media (max-width: 600px) {
-      html .mb4 {
-        margin-bottom: 2rem; } }
-  html .mb5 {
+      html .mb-4 {
+        margin-bottom: 2rem !important; } }
+  html .mb-5 {
     margin-bottom: 5rem; }
     @media (max-width: 600px) {
-      html .mb5 {
-        margin-bottom: 2.5rem; } }
+      html .mb-5 {
+        margin-bottom: 2.5rem !important; } }
 
 body {
   z-index: -100;
@@ -49,6 +49,10 @@ body {
 @font-face {
   font-family: 'MontSemibold';
   src: url("font/mont-semibold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'MontBold';
+  src: url("font/mont-bold-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'RobotoMedium';
@@ -213,6 +217,14 @@ body {
     transition: all .3s; }
     .btn-sendmail .icon-sendmail:hover {
       color: rgba(62, 63, 68, 0.5); }
+  .btn-orange {
+    font-family: "MontBold";
+    line-height: 1.5rem !important;
+    letter-spacing: .73px !important;
+    font-size: 1.6rem !important;
+    background: #f79a20 !important;
+    padding: 1.5rem 2rem !important;
+    color: white !important; }
 
 .icon__footer--social li {
   list-style: none;
@@ -364,6 +376,9 @@ body {
 
 .joinform {
   padding-top: 2.5rem; }
+  @media (max-width: 600px) {
+    .joinform {
+      padding: 0; } }
   .joinform__group {
     position: relative;
     margin-bottom: 2rem; }
@@ -399,6 +414,65 @@ body {
       position: absolute;
       bottom: 15px;
       right: 15px; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* HTML5 Boilerplate accessible hidden styles */
+.promoted-input-checkbox {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.promoted-checkbox input:checked + label > svg {
+  height: 24px;
+  animation: draw-checkbox ease-in-out 0.2s forwards; }
+
+.promoted-checkbox label:active::after {
+  background-color: #e6e6e6; }
+
+.promoted-checkbox label {
+  color: #041827;
+  font-family: "MontRegular", Arial, sans-serif;
+  line-height: 1.8rem;
+  letter-spacing: .5px;
+  cursor: pointer;
+  position: relative; }
+  .promoted-checkbox label:after {
+    content: "";
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    float: left;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+    transition: 0.15s all ease-out; }
+  .promoted-checkbox label .text-label {
+    position: absolute;
+    font-size: 1.1rem;
+    top: -.5rem; }
+
+.promoted-checkbox svg {
+  stroke: #206fc0;
+  stroke-width: 3px;
+  height: 0;
+  width: 1rem;
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  stroke-dasharray: 33; }
+
+@keyframes draw-checkbox {
+  0% {
+    stroke-dashoffset: 33; }
+  100% {
+    stroke-dashoffset: 0; } }
 
 .header {
   position: relative;
@@ -453,6 +527,9 @@ body {
   background: #F7F9FE;
   padding: 5rem !important;
   top: -8em; }
+  @media (max-width: 600px) {
+    .container {
+      font-size: 1rem; } }
   .container__pagination {
     margin-top: 4rem;
     position: relative; }
@@ -479,7 +556,8 @@ body {
     background: #F7F9FE;
     margin-top: -22rem;
     padding: 6rem;
-    z-index: 60; }
+    z-index: 60;
+    padding-bottom: 0; }
     @media (max-width: 600px) {
       .content__wrapper {
         margin-top: -4.5rem;
@@ -595,6 +673,12 @@ body {
 
 .detailstories__box {
   padding-left: 3.5rem; }
+  @media (max-width: 600px) {
+    .detailstories__box {
+      padding: 0; } }
+  @media (max-width: 600px) {
+    .detailstories__box ul li {
+      margin-bottom: .6rem; } }
 
 .footer {
   height: 63.5em;

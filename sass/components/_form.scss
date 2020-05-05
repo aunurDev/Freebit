@@ -29,6 +29,9 @@
 
 .joinform{
     padding-top: 2.5rem;
+    @include responsive(phone){
+        padding: 0;
+    }
     &__group{
         position: relative;
         margin-bottom: 2rem;
