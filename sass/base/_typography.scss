@@ -89,6 +89,45 @@
     }
 }
 
+.header__ketiga{
+    font-size: 2.2rem;
+    line-height: 4rem;
+    padding: 2rem 0 1rem 0 ;
+    font-family: "MontSemibold", Arial, sans-serif;
+    color: #1f222f;
+}
+
+.listlink{
+    padding: 0 !important;
+    &-body{
+        position: relative;
+        margin-bottom: 1rem;
+        list-style-type: none;
+    }
+
+    &-link{
+        text-transform: uppercase;
+        color: #f79a20;
+        font-size: 1.4rem;
+        font-family: "RobotoMedium";
+        letter-spacing: .5px;
+        &--line{
+            height: 2px;
+            background: #f79a20;
+            width: 0rem;
+            position: absolute;
+            transition: all .2s;
+        }
+        &:hover{
+            color: #f79a20;
+        }
+        &:hover ~ .listlink-link--line{
+            width: 6rem;
+        }
+    }
+}
+
+
 .text{
     font-size: 1.4rem;
     letter-spacing: .5px;
