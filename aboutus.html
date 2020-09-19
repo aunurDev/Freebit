@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styledev.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -32,7 +32,7 @@
                     <a class="navbarcollabs__link" href="partner.html">partner</a>
                 </li>
                 <li class="navbarcollabs__item">
-                    <a class="navbarcollabs__link" href="#">advertising</a>
+                    <a class="navbarcollabs__link" href="advertising.html">advertising</a>
                 </li>
                 <li class="navbarcollabs__item">
                     <a class="navbarcollabs__link" href="#">company</a>
@@ -71,7 +71,7 @@
                             <a class="nav-link" href="#">partner</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">advertising</a>
+                            <a class="nav-link" href="advertising.html">advertising</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">company</a>
@@ -195,23 +195,10 @@
                                     </div> 
                                 </div>
                                 <div class="col-md-12 box-check">
-                                    <div class="joinform__group">
-                                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-                                        <symbol id="checkmark" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
-                                            </path>
-                                        </symbol>
-                                        </svg>
-                                        <div class="promoted-checkbox">
-                                            <input id="tmp" type="checkbox" class="promoted-input-checkbox"/>
-                                            <label for="tmp">
-                                                <svg><use xlink:href="#checkmark" /></svg>      
-                                                <span class="text-label">                                                
-                                                    I would like to receive occasional news updates and special offers from Freebits. (Your information remains absolutely private and you can unsubscribe at any time.)
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
+                                    <input type="checkbox" name="checksubscribe" id="checksubscribe">
+                                    <label for="checksubscribe">
+                                        I would like to receive occasional news updates and special offers from Freebits. (Your information remains absolutely private and you can unsubscribe at any time.)
+                                    </label>
                                 </div>
                                 <div class="col-md-12">
                                     <a href="" class="btn btn-orange">SUBMIT</a>

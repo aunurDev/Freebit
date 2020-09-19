@@ -4,7 +4,7 @@
   "description": "freebit prject",
   "main": "index.js",
   "scripts": {
-    "konversi-sass": "node-sass sass/main.scss css/styledev.css -w",
+    "konversi-sass": "node-sass sass/main.scss css/style.css -w",
     "compile": "node-sass sass/main.scss css/style.comp.css",
     "concat": "concat -o css/style.concat.css css/all.min.css css/bootstrap.min.css css/fontawesome.min.css css/style.comp.css",
     "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",

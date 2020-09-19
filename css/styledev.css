@@ -593,66 +593,18 @@ body {
       right: 15px; }
   .joinform .box-check {
     margin-top: 2rem;
-    margin-bottom: 3rem; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-/* HTML5 Boilerplate accessible hidden styles */
-.promoted-input-checkbox {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.promoted-checkbox input:checked + label > svg {
-  height: 24px;
-  animation: draw-checkbox ease-in-out 0.2s forwards; }
-
-.promoted-checkbox label:active::after {
-  background-color: #e6e6e6; }
-
-.promoted-checkbox label {
-  color: #041827;
-  font-family: "MontRegular", Arial, sans-serif;
-  line-height: 1.8rem;
-  letter-spacing: .5px;
-  cursor: pointer;
-  position: relative; }
-  .promoted-checkbox label:after {
-    content: "";
-    height: 2rem;
-    width: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-    float: left;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    border-radius: 3px;
-    transition: 0.15s all ease-out; }
-  .promoted-checkbox label .text-label {
-    position: absolute;
-    font-size: 1.1rem;
-    top: -.4rem; }
-
-.promoted-checkbox svg {
-  stroke: #206fc0;
-  stroke-width: 5px;
-  height: 0;
-  width: 1rem;
-  position: absolute;
-  left: 5px;
-  top: -2px;
-  stroke-dasharray: 33; }
-
-@keyframes draw-checkbox {
-  0% {
-    stroke-dashoffset: 33; }
-  100% {
-    stroke-dashoffset: 0; } }
+    margin-bottom: 5rem;
+    position: relative; }
+    .joinform .box-check label {
+      font-size: 12px;
+      display: inline;
+      color: #041827;
+      font-family: "MontRegular", Arial, sans-serif;
+      line-height: 1.8rem;
+      letter-spacing: .2px;
+      cursor: pointer;
+      position: absolute;
+      left: 3.5rem; }
 
 .header {
   position: relative;
